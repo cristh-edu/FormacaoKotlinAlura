@@ -8,6 +8,6 @@ class Gerente(
         return (senha == this.senha)
     }
 
-    override val bonificacao: Double get() = super.bonificacao +  salario
+    override val bonificacao: Double get() =  salario
 
 }
