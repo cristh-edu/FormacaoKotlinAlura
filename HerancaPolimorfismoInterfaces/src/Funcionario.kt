@@ -1,19 +1,7 @@
-class Funcionario(
+open class Funcionario(
     val nome: String,
     val cpf: String,
-    val salario: Double,
-    val tipo: Int // 0 funcionário, 1 gerente, 2 diretor
+    val salario: Double
 ) {
-    fun bonificacao(): Double {
-        when (tipo) {
-            0 ->
-                return salario * 0.1
-
-            1 ->
-                return salario * 0.2
-
-            else ->
-                return salario * 0.3
-        }
-    }
+    open val bonificacao: Double get() = salario * 0.1
 }

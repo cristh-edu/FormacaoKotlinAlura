@@ -10,5 +10,5 @@ fun main() {
     println("Nome ${alex.nome}")
     println("CPF ${alex.cpf}")
     println("Salario ${alex.salario}")
-    println("Bonificação ${alex.bonificacao()}")
+    println("Bonificação ${alex.bonificacao}")
 }
