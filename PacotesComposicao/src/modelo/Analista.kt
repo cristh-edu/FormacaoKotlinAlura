@@ -1,3 +1,5 @@
+package modelo
+
 class Analista(
     nome: String,
     cpf: String,
@@ -7,10 +9,5 @@ class Analista(
     cpf = cpf,
     salario = salario
 ) {
-
-    override val bonificacao: Double
-        get() {
-            return salario * 0.1
-        }
-
+    override val bonificacao: Double get() = salario * 0.1
 }

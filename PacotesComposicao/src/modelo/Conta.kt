@@ -1,3 +1,5 @@
+package modelo
+
 abstract class Conta(
     var titular: String,
     val numero: Int
@@ -6,9 +8,7 @@ abstract class Conta(
         protected set
 
     fun deposita(valor: Double) {
-        if (valor > 0) {
-            this.saldo += valor
-        }
+        if (valor > 0) this.saldo += valor
     }
 
     abstract fun saca(valor: Double)

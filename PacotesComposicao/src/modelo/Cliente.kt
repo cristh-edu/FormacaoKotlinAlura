@@ -1,3 +1,5 @@
+package modelo
+
 class Cliente(
     val nome: String,
     val cpf: String,
@@ -5,10 +7,7 @@ class Cliente(
 ) : Autenticavel {
 
     override fun autentica(senha: Int): Boolean {
-        if(this.senha == senha){
-            return true
-        }
-        return false
+        return (this.senha == senha)
     }
 
 }
