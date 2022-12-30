@@ -1,4 +1,4 @@
-package modelo
+package br.com.alura.bytebank.modelo
 
 abstract class FuncionarioAdmin(
     nome: String, cpf: String, salario: Double, protected val senha: Int

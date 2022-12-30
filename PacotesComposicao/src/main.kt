@@ -1,11 +1,6 @@
-import modelo.Cliente
-import teste.testaAutenticacao
-import novoModelo.Cliente as NovoCliente
+import br.com.alura.bytebank.modelo.Cliente
 
 fun main() {
-    testaAutenticacao() // ctrl + alt + o ----> remover imports desnessários
-
-    val antCliente = Cliente("Cristhian", "111.111.111.00", 1234)
-//    val novCliente = novoModelo.Cliente()
-    val novCliente = NovoCliente()
+    // ctrl + alt + o ----> remover imports desnessários
+    val cliente = Cliente("Cristhian", "111.111.111.00", 1234)
 }
