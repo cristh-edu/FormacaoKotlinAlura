@@ -7,11 +7,27 @@ import br.com.alura.bytebank.modelo.Endereco
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
-        titular = Cliente("Alex", "123.123.123-12", senha = 1234),
+        titular = Cliente(
+            nome = "Alex",
+            cpf = "111.111.111-11",
+            senha = 1,
+            endereco = Endereco(
+                logradouro = "Rua Vergueiro"
+            )
+        ),
         numero = 1000
     )
+    println("titular ${contaCorrente.titular}")
+    println("nome do titular ${contaCorrente.titular.nome}")
+    println("cpf do titular ${contaCorrente.titular.cpf}")
+    println("endereco titular ${contaCorrente.titular.endereco}")
+
     val contaPoupanca = ContaPoupanca(
-        titular = Cliente("Fran", "123.456.789-10", Endereco(logradouro = "Rua dos Alfeneiros", numero = 4), 1234),
+        titular = Cliente(
+            nome = "Fran",
+            cpf = "",
+            senha = 2
+        ),
         numero = 1001
     )
 

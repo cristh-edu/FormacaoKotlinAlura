@@ -1,6 +1,6 @@
 package br.com.alura.bytebank.modelo
 
-class Endereco (
+class Endereco(
     var logradouro: String = "",
     var numero: Int = 0,
     var bairro: String = "",
@@ -8,6 +8,4 @@ class Endereco (
     var estado: String = "",
     var cep: String = "",
     var complemento: String = ""
-){
-
-}
+)

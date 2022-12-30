@@ -6,9 +6,7 @@ class Cliente(
     var endereco: Endereco = Endereco(),
     private val senha: Int
 ) : Autenticavel {
-
     override fun autentica(senha: Int): Boolean {
         return (this.senha == senha)
     }
-
 }

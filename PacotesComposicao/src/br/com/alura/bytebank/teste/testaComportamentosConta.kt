@@ -5,11 +5,14 @@ import br.com.alura.bytebank.modelo.ContaCorrente
 import br.com.alura.bytebank.modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
-    val alex = Cliente(nome = "Alex", cpf =  "", senha = 1234)
+
+    val alex = Cliente(nome = "Alex", cpf = "", senha = 1)
+
     val contaAlex = ContaCorrente(titular = alex, numero = 1000)
     contaAlex.deposita(200.0)
 
-    val fran = Cliente("Fran", "", senha = 1234)
+    val fran = Cliente(nome = "Fran", cpf = "", senha = 2)
+
     val contaFran = ContaPoupanca(numero = 1001, titular = fran)
     contaFran.deposita(300.0)
 
@@ -47,11 +50,9 @@ fun testaComportamentosConta() {
 
     println("Transferência da conta da Fran para o Alex")
 
-    if (contaFran.transfere(destino = contaAlex, valor = 300.0)) {
-        println("Transferência sucedida")
-    } else {
-        println("Falha na transferência")
-    }
+    if (contaFran.transfere(destino = contaAlex, valor = 300.0)) println("Transferência sucedida")
+    else println("Falha na transferência")
+
 
     println(contaAlex.saldo)
     println(contaFran.saldo)

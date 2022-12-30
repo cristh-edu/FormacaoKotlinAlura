@@ -1,6 +1,7 @@
+package br.com.alura.bytebank
+
 import br.com.alura.bytebank.teste.testaContasDiferentes
 
 fun main() {
-    // ctrl + alt + o ----> remover imports desnessários
     testaContasDiferentes()
 }
