@@ -1,6 +1,6 @@
-import br.com.alura.bytebank.modelo.Cliente
+import br.com.alura.bytebank.teste.testaContasDiferentes
 
 fun main() {
     // ctrl + alt + o ----> remover imports desnessários
-    val cliente = Cliente("Cristhian", "111.111.111.00", 1234)
+    testaContasDiferentes()
 }
